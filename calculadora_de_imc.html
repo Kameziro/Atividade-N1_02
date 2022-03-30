@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<h3> Calcule seu IMC! </h3>
+<script> 
+	var ano = 2022;
+
+    function pulaLinha(){
+
+    	document.write("<br>");
+    }
+
+    function imprime(frase){
+         document.write(frase);
+         pulaLinha();
+    }
+
+	function calculaImc(peso, altura){
+
+          return peso / (altura*altura)
+     }
+
+     var nome = prompt("Informe seu nome");
+     var altura = prompt(nome + ", informe sua altura: ");
+     var peso = prompt(nome + ", informe seu peso: ");
+
+     var imc = calculaImc(peso, altura);
+     imprime(nome + ", o seu IMC é " + imc);
+
+</script>
+
+Parabéns! agora quer ver algo pior que esse site? <a href="https://www.playvalorant.com"> acesse aqui!</a>	
